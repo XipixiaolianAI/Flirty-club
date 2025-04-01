@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开发计划 - Flirty.club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="./index.html" class="logo">Flirty<span>.club</span></a>
+            <ul class="nav-links">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./development.html" class="active">开发计划</a></li>
+                <li><a href="./marketing.html">市场计划</a></li>
+                <li><a href="./model.html">模型计划</a></li>
+                <li><a href="./demo.html">Demo展示</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <h1>开发计划</h1>
+            <p>Flirty.club 详细功能开发计划与时间线</p>
+        </div>
+    </section>
+
+    <!-- 开发时间线 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>开发时间线</h2>
+                <p>Flirty.club 项目的开发时间线与里程碑</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/timeline.svg" alt="开发时间线" class="img-fluid">
+                <h3>关键里程碑</h3>
+                <ul>
+                    <li><strong>4月初</strong>：项目开发启动</li>
+                    <li><strong>4月底</strong>：核心功能开发完成</li>
+                    <li><strong>5月上旬</strong>：功能联调期</li>
+                    <li><strong>5月中旬</strong>：版本1.0（MVP版本）上线</li>
+                    <li><strong>6月中旬</strong>：版本1.1上线，核心是推出AI视频聊天功能</li>
+                    <li><strong>7月中旬</strong>：版本1.2上线，核心是加强Web3版本功能</li>
+                </ul>
+                <h3>用户目标</h3>
+                <ul>
+                    <li>上线1个月内达到1万用户</li>
+                    <li>上线3个月内达到10万月活用户</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 系统架构 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>系统架构</h2>
+                <p>Flirty.club 系统模块与功能架构</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/system_architecture.svg" alt="系统架构图" class="img-fluid">
+                <h3>核心模块说明</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>模块名称</th>
+                            <th>功能描述</th>
+                            <th>版本</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>用户模块</td>
+                            <td>支持Telegram登录，绑定Twitter和钱包，区分VIP会员和普通会员</td>
+                            <td>Beta 1.0</td>
+                        </tr>
+                        <tr>
+                            <td>支付模块</td>
+                            <td>对接Telegram Stars和数字货币支付(oxapay.com)，支持Ton wallet支付</td>
+                            <td>Beta 1.0</td>
+                        </tr>
+                        <tr>
+                            <td>积分模块</td>
+                            <td>管理积分的购买、空投和消耗</td>
+                            <td>Beta 1.0</td>
+                        </tr>
+                        <tr>
+                            <td>AI女友创建</td>
+                            <td>根据提示词生成对应形象和声音的女友Lora</td>
+                            <td>Beta 1.0</td>
+                        </tr>
+                        <tr>
+                            <td>AI女友IM</td>
+                            <td>支持文字聊天、发送照片和照片转视频</td>
+                            <td>Beta 1.0</td>
+                        </tr>
+                        <tr>
+                            <td>市场模块</td>
+                            <td>设计空投任务，通过完成任务赚取代币，对接Telegram分享</td>
+                            <td>Beta 1.0</td>
+                        </tr>
+                        <tr>
+                            <td>AI视频聊天</td>
+                            <td>混合式渐进生成的视频聊天功能</td>
+                            <td>Beta 1.1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户流程 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>用户流程</h2>
+                <p>Flirty.club 用户交互流程图</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/user_flow.svg" alt="用户流程图" class="img-fluid">
+                <h3>主要用户流程说明</h3>
+                <ol>
+                    <li><strong>用户登录流程</strong>：用户通过Telegram登录，可以选择绑定Twitter和钱包</li>
+                    <li><strong>AI女友创建流程</strong>：用户选择创建女友，输入提示词，系统生成女友形象和声音</li>
+                    <li><strong>聊天流程</strong>：用户选择女友进行文字聊天，可以接收AI生成的照片，照片可以转换为视频</li>
+                    <li><strong>支付流程</strong>：用户可以购买积分或VIP会员，享受更多功能</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- 详细开发计划 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>详细开发计划</h2>
+                <p>按照时间顺序的功能开发计划</p>
+            </div>
+            <div class="card">
+                <h3>第一阶段：核心功能开发（4月初 - 4月底）</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>功能模块</th>
+                            <th>工作任务</th>
+                            <th>优先级</th>
+                            <th>预计时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>用户模块</td>
+                            <td>实现Telegram登录功能</td>
+                            <td>高</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>用户模块</td>
+                            <td>实现Twitter绑定和钱包绑定</td>
+                            <td>中</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>支付模块</td>
+                            <td>对接Telegram Stars支付</td>
+                            <td>高</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>支付模块</td>
+                            <td>对接oxapay.com数字货币支付</td>
+                            <td>中</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>积分模块</td>
+                            <td>实现积分的购买、空投和消耗功能</td>
+                            <td>高</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>AI女友创建</td>
+                            <td>实现根据提示词生成女友形象功能</td>
+                            <td>高</td>
+                            <td>2周</td>
+                        </tr>
+                        <tr>
+                            <td>AI女友创建</td>
+                            <td>实现根据提示词生成女友声音功能</td>
+                            <td>中</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>AI女友IM</td>
+                            <td>实现文字聊天功能</td>
+                            <td>高</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>AI女友IM</td>
+                            <td>实现发送照片功能</td>
+                            <td>中</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>AI女友IM</td>
+                            <td>实现照片转视频功能</td>
+                            <td>低</td>
+                            <td>2周</td>
+                        </tr>
+                        <tr>
+                            <td>市场模块</td>
+                            <td>实现空投任务功能</td>
+                            <td>中</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>市场模块</td>
+                            <td>实现Telegram分享功能</td>
+                            <td>中</td>
+                            <td>1周</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="card">
+                <h3>第二阶段：联调与上线（5月上旬 - 5月中旬）</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>工作任务</th>
+                            <th>优先级</th>
+                            <th>预计时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>各模块功能联调</td>
+                            <td>高</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>Bug修复与性能优化</td>
+                            <td>高</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>内部测试与反馈收集</td>
+                            <td>高</td>
+                            <td>1周</td>
+                        </tr>
+                        <tr>
+                            <td>正式上线准备</td>
+                            <td>高</td>
+                            <td>3天</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="section">
+        <div class="container">
+            <p>© 2025 Flirty.club - AI女友平台</p>
+        </div>
+    </footer>
+</body>
+</html>

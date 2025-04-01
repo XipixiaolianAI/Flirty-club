@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模型计划 - Flirty.club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="./index.html" class="logo">Flirty<span>.club</span></a>
+            <ul class="nav-links">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./development.html">开发计划</a></li>
+                <li><a href="./marketing.html">市场计划</a></li>
+                <li><a href="./model.html" class="active">模型计划</a></li>
+                <li><a href="./demo.html">Demo展示</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <h1>模型计划</h1>
+            <p>Flirty.club AI模型选型与优化策略</p>
+        </div>
+    </section>
+
+    <!-- 模型概述 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>模型概述</h2>
+                <p>Flirty.club 使用的AI模型技术栈与架构</p>
+            </div>
+            <div class="card">
+                <h3>核心模型技术栈</h3>
+                <p>Flirty.club项目采用多模型协同工作的方式，实现AI女友的多模态交互能力。我们的技术栈包括：</p>
+                <ul>
+                    <li><strong>大语言模型</strong>：负责自然语言理解与生成，提供对话能力</li>
+                    <li><strong>图像生成模型</strong>：负责生成AI女友的照片</li>
+                    <li><strong>语音合成模型</strong>：负责生成AI女友的声音</li>
+                    <li><strong>视频生成模型</strong>：负责将静态照片转换为动态视频</li>
+                </ul>
+                
+                <h3>模型架构图</h3>
+                <img src="./assets/images/model_architecture.svg" alt="模型架构图" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- 模型选型 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>模型选型</h2>
+                <p>各功能模块的模型选型与对比</p>
+            </div>
+            
+            <!-- 大语言模型 -->
+            <div class="model-card">
+                <div class="model-header">
+                    <h3>大语言模型选型</h3>
+                </div>
+                <div class="model-body">
+                    <p>大语言模型负责AI女友的对话能力，需要具备良好的上下文理解、角色扮演和情感表达能力。</p>
+                    
+                    <div class="model-comparison">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>模型名称</th>
+                                    <th>优势</th>
+                                    <th>劣势</th>
+                                    <th>适用场景</th>
+                                    <th>选用决策</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GPT-4</td>
+                                    <td>理解能力强，上下文窗口大，角色扮演能力出色</td>
+                                    <td>成本高，API调用延迟较高</td>
+                                    <td>高端用户，需要深度对话体验</td>
+                                    <td>VIP用户使用</td>
+                                </tr>
+                                <tr>
+                                    <td>Claude 3</td>
+                                    <td>情感表达自然，安全性好</td>
+                                    <td>API访问限制，成本较高</td>
+                                    <td>需要情感细腻表达的场景</td>
+                                    <td>备选方案</td>
+                                </tr>
+                                <tr>
+                                    <td>Llama 3</td>
+                                    <td>开源可本地部署，成本低</td>
+                                    <td>性能略逊于闭源模型</td>
+                                    <td>普通用户日常对话</td>
+                                    <td>普通用户使用</td>
+                                </tr>
+                                <tr>
+                                    <td>自研微调模型</td>
+                                    <td>针对角色扮演场景优化，响应速度快</td>
+                                    <td>开发成本高，需要大量训练数据</td>
+                                    <td>特定角色扮演场景</td>
+                                    <td>长期发展方向</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h4>最终选择</h4>
+                    <p>采用混合策略：普通用户使用Llama 3模型，VIP用户可选择使用GPT-4。后期根据用户反馈和业务发展，逐步推进自研微调模型的开发。</p>
+                </div>
+            </div>
+            
+            <!-- 图像生成模型 -->
+            <div class="model-card">
+                <div class="model-header">
+                    <h3>图像生成模型选型</h3>
+                </div>
+                <div class="model-body">
+                    <p>图像生成模型负责创建AI女友的视觉形象，需要具备高质量的图像生成能力和角色一致性。</p>
+                    
+                    <div class="model-comparison">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>模型名称</th>
+                                    <th>优势</th>
+                                    <th>劣势</th>
+                                    <th>适用场景</th>
+                                    <th>选用决策</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Stable Diffusion XL</td>
+                                    <td>开源可本地部署，自定义能力强</td>
+                                    <td>需要较高算力，生成质量略低于DALL-E 3</td>
+                                    <td>基础形象生成，可定制性高</td>
+                                    <td>主要使用</td>
+                                </tr>
+                                <tr>
+                                    <td>DALL-E 3</td>
+                                    <td>图像质量高，细节丰富</td>
+                                    <td>API成本高，定制化能力有限</td>
+                                    <td>高质量图像需求</td>
+                                    <td>VIP用户使用</td>
+                                </tr>
+                                <tr>
+                                    <td>Midjourney</td>
+                                    <td>艺术风格强，视觉效果好</td>
+                                    <td>API限制，难以集成</td>
+                                    <td>特殊艺术风格需求</td>
+                                    <td>不采用</td>
+                                </tr>
+                                <tr>
+                                    <td>自研LoRA模型</td>
+                                    <td>角色一致性好，生成速度快</td>
+                                    <td>需要针对每个角色单独训练</td>
+                                    <td>需要高度角色一致性的场景</td>
+                                    <td>核心技术方向</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h4>最终选择</h4>
+                    <p>基础模型采用Stable Diffusion XL，结合自研LoRA技术实现角色一致性。VIP用户可选择使用DALL-E 3生成更高质量的图像。</p>
+                </div>
+            </div>
+            
+            <!-- 语音合成模型 -->
+            <div class="model-card">
+                <div class="model-header">
+                    <h3>语音合成模型选型</h3>
+                </div>
+                <div class="model-body">
+                    <p>语音合成模型负责生成AI女友的声音，需要自然流畅、情感丰富的语音效果。</p>
+                    
+                    <div class="model-comparison">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>模型名称</th>
+                                    <th>优势</th>
+                                    <th>劣势</th>
+                                    <th>适用场景</th>
+                                    <th>选用决策</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ElevenLabs</td>
+                                    <td>语音自然度高，情感表达丰富</td>
+                                    <td>API成本较高</td>
+                                    <td>需要高质量语音体验</td>
+                                    <td>主要使用</td>
+                                </tr>
+                                <tr>
+                                    <td>Azure TTS</td>
+                                    <td>稳定性好，多语言支持</td>
+                                    <td>情感表达略显机械</td>
+                                    <td>多语言场景</td>
+                                    <td>备选方案</td>
+                                </tr>
+                                <tr>
+                                    <td>VITS</td>
+                                    <td>开源可本地部署，成本低</td>
+                                    <td>需要自行训练，质量不稳定</td>
+                                    <td>成本敏感场景</td>
+                                    <td>普通用户使用</td>
+                                </tr>
+                                <tr>
+                                    <td>自研声音克隆模型</td>
+                                    <td>可基于少量样本生成特定声音</td>
+                                    <td>开发难度大，需要大量训练</td>
+                                    <td>高度个性化需求</td>
+                                    <td>长期发展方向</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h4>最终选择</h4>
+                    <p>普通用户使用VITS模型，VIP用户使用ElevenLabs。后期根据业务发展，逐步推进自研声音克隆模型的开发。</p>
+                </div>
+            </div>
+            
+            <!-- 视频生成模型 -->
+            <div class="model-card">
+                <div class="model-header">
+                    <h3>视频生成模型选型</h3>
+                </div>
+                <div class="model-body">
+                    <p>视频生成模型负责将静态照片转换为动态视频，实现AI女友的视频互动能力。</p>
+                    
+                    <div class="model-comparison">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>模型名称</th>
+                                    <th>优势</th>
+                                    <th>劣势</th>
+                                    <th>适用场景</th>
+                                    <th>选用决策</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>D-ID</td>
+                                    <td>成熟的API，稳定性好</td>
+                                    <td>成本高，自定义能力有限</td>
+                                    <td>需要稳定可靠的视频生成</td>
+                                    <td>初期使用</td>
+                                </tr>
+                                <tr>
+                                    <td>HeyGen</td>
+                                    <td>视频质量高，唇形同步准确</td>
+                                    <td>API限制，成本高</td>
+                                    <td>高质量视频需求</td>
+                                    <td>VIP用户使用</td>
+                                </tr>
+                                <tr>
+                                    <td>Wav2Lip</td>
+                                    <td>开源可本地部署，成本低</td>
+                                    <td>质量一般，需要调优</td>
+                                    <td>基础视频生成</td>
+                                    <td>普通用户使用</td>
+                                </tr>
+                                <tr>
+                                    <td>自研视频生成模型</td>
+                                    <td>可实现实时视频生成，延迟低</td>
+                                    <td>开发难度大，需要大量训练</td>
+                                    <td>实时视频聊天</td>
+                                    <td>Beta 1.1版本核心技术</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h4>最终选择</h4>
+                    <p>Beta 1.0版本使用Wav2Lip和D-ID组合方案，Beta 1.1版本推出自研视频生成模型，实现实时视频聊天功能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模型优化 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>模型优化</h2>
+                <p>提升AI模型性能与用户体验的优化策略</p>
+            </div>
+            <div class="card">
+                <h3>性能优化策略</h3>
+                <ol>
+                    <li><strong>模型量化</strong>：对大型模型进行量化，减少内存占用和推理时间</li>
+                    <li><strong>模型蒸馏</strong>：从大模型中提取知识到小模型，提高推理速度</li>
+                    <li><strong>缓存机制</strong>：对常用的生成结果进行缓存，减少重复计算</li>
+                    <li><strong>分布式部署</strong>：采用多服务器分布式部署，提高并发处理能力</li>
+                    <li><strong>GPU加速</strong>：使用GPU进行模型推理，提高处理速度</li>
+                </ol>
+                
+                <h3>用户体验优化</h3>
+                <ul>
+                    <li><strong>渐进式生成</strong>：采用渐进式生成策略，先返回初步结果，再逐步优化</li>
+                    <li><strong>预生成机制</strong>：预先生成可能的响应，减少用户等待时间</li>
+                    <li><strong>多模态协同</strong>：文字、图像、语音和视频多模态协同工作，提供沉浸式体验</li>
+                    <li><strong>个性化调优</strong>：根据用户交互历史，对模型进行个性化调优</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 算力规划 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>算力规划</h2>
+                <p>支持AI模型运行的算力资源规划</p>
+            </div>
+            <div class="card">
+                <h3>算力需求估算</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>用户规模</th>
+                            <th>GPU需求</th>
+                            <th>存储需求</th>
+                            <th>带宽需求</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1万用户</td>
+                            <td>4-8张A100</td>
+                            <td>2TB</td>
+                            <td>100Mbps</td>
+                        </tr>
+                        <tr>
+                            <td>10万用户</td>
+                            <td>20-30张A100</td>
+                            <td>10TB</td>
+                            <td>1Gbps</td>
+                        </tr>
+                        <tr>
+                            <td>50万用户</td>
+                            <td>100+张A100</td>
+                            <td>50TB</td>
+                            <td>10Gbps</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>算力供应策略</h3>
+                <ol>
+                    <li><strong>初期阶段</strong>：使用云服务提供商的GPU资源，如AWS、GCP或Azure</li>
+                    <li><strong>增长阶段</strong>：混合使用云资源和自建GPU服务器，优化成本</li>
+                    <li><strong>稳定阶段</strong>：主要使用自建GPU集群，辅以云资源应对峰值需求</li>
+                </ol>
+                
+                <h3>成本控制措施</h3>
+                <ul>
+                    <li>根据用户活跃时间动态调整算力资源</li>
+                    <li>对非VIP用户采用轻量级模型，减少算力消耗</li>
+                    <li>实施模型缓存和结果复用机制，减少重复计算</li>
+                    <li>优化模型推理效率，减少单次交互的算力需求</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="section">
+        <div class="container">
+            <p>© 2025 Flirty.club - AI女友平台</p>
+        </div>
+    </footer>
+</body>
+</html>
