@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .icon-bg { fill: #4c6ef5; rx: 10; ry: 10; }
+    .icon-text { font: bold 16px Arial; fill: #fff; text-anchor: middle; }
+    .icon-desc { font: 14px Arial; fill: #333; text-anchor: middle; }
+  </style>
+  
+  <!-- AI女友IM模块图标 -->
+  <rect x="10" y="10" width="180" height="140" class="icon-bg"/>
+  <text x="100" y="60" class="icon-text">AI女友IM</text>
+  <text x="100" y="100" class="icon-desc">文字聊天</text>
+  <text x="100" y="120" class="icon-desc">发送照片</text>
+  <text x="100" y="140" class="icon-desc">照片转视频</text>
+</svg>

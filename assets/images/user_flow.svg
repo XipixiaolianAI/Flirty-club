@@ -1,6 +1,97 @@
-/* 这是一个SVG占位图，用于用户流程图 */
-<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="#f0f0f0"/>
-  <text x="400" y="150" font-family="Arial" font-size="24" text-anchor="middle">用户流程图</text>
-  <text x="400" y="190" font-family="Arial" font-size="16" text-anchor="middle">Flirty.club用户交互流程</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .step { font: bold 16px Arial; fill: #fff; }
+    .step-bg { fill: #20c997; rx: 10; ry: 10; }
+    .step-text { font: 14px Arial; fill: #333; }
+    .arrow { stroke: #adb5bd; stroke-width: 2; marker-end: url(#arrowhead); }
+    .decision-bg { fill: #ffd43b; rx: 10; ry: 10; }
+    .user-icon { fill: #4dabf7; }
+    .system-icon { fill: #ff6b6b; }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#adb5bd"/>
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" class="title">Flirty.club 用户流程</text>
+  
+  <!-- 用户图标 -->
+  <circle cx="100" cy="120" r="30" class="user-icon"/>
+  <text x="100" y="125" text-anchor="middle" font-size="14" fill="white">用户</text>
+  
+  <!-- 步骤1：登录 -->
+  <rect x="220" y="95" width="160" height="50" class="step-bg"/>
+  <text x="300" y="125" text-anchor="middle" class="step">Telegram登录</text>
+  
+  <!-- 步骤2：选择功能 -->
+  <rect x="450" y="95" width="160" height="50" class="step-bg"/>
+  <text x="530" y="125" text-anchor="middle" class="step">选择功能</text>
+  
+  <!-- 功能分支 -->
+  <rect x="220" y="220" width="160" height="50" class="step-bg"/>
+  <text x="300" y="250" text-anchor="middle" class="step">创建AI女友</text>
+  
+  <rect x="450" y="220" width="160" height="50" class="step-bg"/>
+  <text x="530" y="250" text-anchor="middle" class="step">聊天互动</text>
+  
+  <rect x="680" y="220" width="160" height="50" class="step-bg"/>
+  <text x="760" y="250" text-anchor="middle" class="step">积分管理</text>
+  
+  <!-- 创建AI女友流程 -->
+  <rect x="220" y="320" width="160" height="50" class="step-bg"/>
+  <text x="300" y="350" text-anchor="middle" class="step">输入提示词</text>
+  
+  <rect x="220" y="420" width="160" height="50" class="step-bg"/>
+  <text x="300" y="450" text-anchor="middle" class="step">生成女友形象</text>
+  
+  <rect x="220" y="520" width="160" height="50" class="step-bg"/>
+  <text x="300" y="550" text-anchor="middle" class="step">保存女友设置</text>
+  
+  <!-- 聊天互动流程 -->
+  <rect x="450" y="320" width="160" height="50" class="step-bg"/>
+  <text x="530" y="350" text-anchor="middle" class="step">选择女友</text>
+  
+  <rect x="450" y="420" width="160" height="50" class="step-bg"/>
+  <text x="530" y="450" text-anchor="middle" class="step">文字/图片聊天</text>
+  
+  <rect x="450" y="520" width="160" height="50" class="step-bg"/>
+  <text x="530" y="550" text-anchor="middle" class="step">照片转视频</text>
+  
+  <!-- 积分管理流程 -->
+  <rect x="680" y="320" width="160" height="50" class="step-bg"/>
+  <text x="760" y="350" text-anchor="middle" class="step">购买积分</text>
+  
+  <rect x="680" y="420" width="160" height="50" class="step-bg"/>
+  <text x="760" y="450" text-anchor="middle" class="step">完成任务获取积分</text>
+  
+  <rect x="680" y="520" width="160" height="50" class="step-bg"/>
+  <text x="760" y="550" text-anchor="middle" class="step">使用积分解锁功能</text>
+  
+  <!-- 连接箭头 -->
+  <line x1="130" y1="120" x2="220" y2="120" class="arrow"/>
+  <line x1="380" y1="120" x2="450" y2="120" class="arrow"/>
+  
+  <line x1="530" y1="145" x2="530" y2="220" class="arrow"/>
+  <line x1="530" y1="145" x2="300" y2="220" class="arrow"/>
+  <line x1="530" y1="145" x2="760" y2="220" class="arrow"/>
+  
+  <!-- 创建AI女友流程箭头 -->
+  <line x1="300" y1="270" x2="300" y2="320" class="arrow"/>
+  <line x1="300" y1="370" x2="300" y2="420" class="arrow"/>
+  <line x1="300" y1="470" x2="300" y2="520" class="arrow"/>
+  
+  <!-- 聊天互动流程箭头 -->
+  <line x1="530" y1="270" x2="530" y2="320" class="arrow"/>
+  <line x1="530" y1="370" x2="530" y2="420" class="arrow"/>
+  <line x1="530" y1="470" x2="530" y2="520" class="arrow"/>
+  
+  <!-- 积分管理流程箭头 -->
+  <line x1="760" y1="270" x2="760" y2="320" class="arrow"/>
+  <line x1="760" y1="370" x2="760" y2="420" class="arrow"/>
+  <line x1="760" y1="470" x2="760" y2="520" class="arrow"/>
 </svg>

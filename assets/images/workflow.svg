@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .step { font: bold 16px Arial; fill: #fff; }
+    .step-bg { fill: #339af0; rx: 10; ry: 10; }
+    .step-text { font: 14px Arial; fill: #333; }
+    .arrow { stroke: #adb5bd; stroke-width: 2; marker-end: url(#arrowhead); }
+    .description { font: 14px Arial; fill: #555; }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#adb5bd"/>
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" class="title">AI模型开发流程</text>
+  
+  <!-- 步骤1：搜集模型 -->
+  <rect x="100" y="100" width="120" height="60" class="step-bg"/>
+  <text x="160" y="135" text-anchor="middle" class="step">搜集模型</text>
+  <text x="160" y="180" text-anchor="middle" class="description">寻找和整理适合项目</text>
+  <text x="160" y="200" text-anchor="middle" class="description">需求的AI模型</text>
+  
+  <!-- 步骤2：筛选模型 -->
+  <rect x="300" y="100" width="120" height="60" class="step-bg"/>
+  <text x="360" y="135" text-anchor="middle" class="step">筛选模型</text>
+  <text x="360" y="180" text-anchor="middle" class="description">评估和选择最适合</text>
+  <text x="360" y="200" text-anchor="middle" class="description">项目的模型</text>
+  
+  <!-- 步骤3：测试模型 -->
+  <rect x="500" y="100" width="120" height="60" class="step-bg"/>
+  <text x="560" y="135" text-anchor="middle" class="step">测试模型</text>
+  <text x="560" y="180" text-anchor="middle" class="description">对选定的模型进行</text>
+  <text x="560" y="200" text-anchor="middle" class="description">性能和效果测试</text>
+  
+  <!-- 步骤4：搭建工作流 -->
+  <rect x="200" y="300" width="120" height="60" class="step-bg"/>
+  <text x="260" y="335" text-anchor="middle" class="step">搭建工作流</text>
+  <text x="260" y="380" text-anchor="middle" class="description">构建完整的</text>
+  <text x="260" y="400" text-anchor="middle" class="description">AI处理流程</text>
+  
+  <!-- 步骤5：与APP开发联调 -->
+  <rect x="400" y="300" width="120" height="60" class="step-bg"/>
+  <text x="460" y="335" text-anchor="middle" class="step">与APP联调</text>
+  <text x="460" y="380" text-anchor="middle" class="description">确保AI模型与平台</text>
+  <text x="460" y="400" text-anchor="middle" class="description">功能无缝集成</text>
+  
+  <!-- 连接箭头 -->
+  <line x1="220" y1="130" x2="300" y2="130" class="arrow"/>
+  <line x1="420" y1="130" x2="500" y2="130" class="arrow"/>
+  <line x1="560" y1="160" x2="560" y2="240" class="arrow"/>
+  <line x1="560" y1="240" x2="320" y2="300" class="arrow"/>
+  <line x1="320" y1="330" x2="400" y2="330" class="arrow"/>
+  
+  <!-- 时间指示 -->
+  <rect x="100" y="450" width="600" height="30" fill="#f8f9fa" rx="5" ry="5" stroke="#dee2e6"/>
+  <text x="400" y="470" text-anchor="middle" font-size="14" fill="#333">基于30天工作时间的AI模型开发计划</text>
+  
+  <!-- 时间点标记 -->
+  <line x1="160" y1="430" x2="160" y2="450" stroke="#adb5bd"/>
+  <text x="160" y="425" text-anchor="middle" font-size="12" fill="#666">第1周</text>
+  
+  <line x1="360" y1="430" x2="360" y2="450" stroke="#adb5bd"/>
+  <text x="360" y="425" text-anchor="middle" font-size="12" fill="#666">第2周</text>
+  
+  <line x1="560" y1="430" x2="560" y2="450" stroke="#adb5bd"/>
+  <text x="560" y="425" text-anchor="middle" font-size="12" fill="#666">第3周</text>
+  
+  <line x1="260" y1="430" x2="260" y2="450" stroke="#adb5bd"/>
+  <text x="260" y="425" text-anchor="middle" font-size="12" fill="#666">第4周</text>
+  
+  <line x1="460" y1="430" x2="460" y2="450" stroke="#adb5bd"/>
+  <text x="460" y="425" text-anchor="middle" font-size="12" fill="#666">第5-6周</text>
+</svg>

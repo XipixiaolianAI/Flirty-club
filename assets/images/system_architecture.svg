@@ -1,6 +1,89 @@
-/* 这是一个SVG占位图，用于系统架构图 */
-<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="#f0f0f0"/>
-  <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle">系统架构图</text>
-  <text x="400" y="240" font-family="Arial" font-size="16" text-anchor="middle">Flirty.club系统模块与功能架构</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .module { font: bold 16px Arial; fill: #fff; }
+    .module-bg { fill: #4dabf7; rx: 10; ry: 10; }
+    .module-text { font: 14px Arial; fill: #333; }
+    .connection { stroke: #adb5bd; stroke-width: 2; marker-end: url(#arrowhead); }
+    .layer-bg { fill: #f1f3f5; rx: 10; ry: 10; stroke: #dee2e6; stroke-width: 1; }
+    .layer-title { font: bold 18px Arial; fill: #495057; }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#adb5bd"/>
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" class="title">Flirty.club 系统架构</text>
+  
+  <!-- 前端层 -->
+  <rect x="50" y="80" width="700" height="120" class="layer-bg"/>
+  <text x="400" y="110" text-anchor="middle" class="layer-title">前端层 (Telegram Miniapp)</text>
+  
+  <rect x="100" y="130" width="120" height="50" class="module-bg"/>
+  <text x="160" y="160" text-anchor="middle" class="module">用户界面</text>
+  
+  <rect x="340" y="130" width="120" height="50" class="module-bg"/>
+  <text x="400" y="160" text-anchor="middle" class="module">交互逻辑</text>
+  
+  <rect x="580" y="130" width="120" height="50" class="module-bg"/>
+  <text x="640" y="160" text-anchor="middle" class="module">API调用</text>
+  
+  <!-- 应用层 -->
+  <rect x="50" y="220" width="700" height="180" class="layer-bg"/>
+  <text x="400" y="250" text-anchor="middle" class="layer-title">应用层</text>
+  
+  <rect x="100" y="280" width="120" height="50" class="module-bg"/>
+  <text x="160" y="310" text-anchor="middle" class="module">用户模块</text>
+  
+  <rect x="250" y="280" width="120" height="50" class="module-bg"/>
+  <text x="310" y="310" text-anchor="middle" class="module">支付模块</text>
+  
+  <rect x="400" y="280" width="120" height="50" class="module-bg"/>
+  <text x="460" y="310" text-anchor="middle" class="module">积分模块</text>
+  
+  <rect x="550" y="280" width="120" height="50" class="module-bg"/>
+  <text x="610" y="310" text-anchor="middle" class="module">市场模块</text>
+  
+  <rect x="175" y="340" width="120" height="50" class="module-bg"/>
+  <text x="235" y="370" text-anchor="middle" class="module">AI女友创建</text>
+  
+  <rect x="475" y="340" width="120" height="50" class="module-bg"/>
+  <text x="535" y="370" text-anchor="middle" class="module">AI女友IM</text>
+  
+  <!-- AI服务层 -->
+  <rect x="50" y="420" width="700" height="120" class="layer-bg"/>
+  <text x="400" y="450" text-anchor="middle" class="layer-title">AI服务层</text>
+  
+  <rect x="100" y="480" width="120" height="50" class="module-bg"/>
+  <text x="160" y="510" text-anchor="middle" class="module">大语言模型</text>
+  
+  <rect x="250" y="480" width="120" height="50" class="module-bg"/>
+  <text x="310" y="510" text-anchor="middle" class="module">图像生成</text>
+  
+  <rect x="400" y="480" width="120" height="50" class="module-bg"/>
+  <text x="460" y="510" text-anchor="middle" class="module">语音合成</text>
+  
+  <rect x="550" y="480" width="120" height="50" class="module-bg"/>
+  <text x="610" y="510" text-anchor="middle" class="module">视频生成</text>
+  
+  <!-- 连接线 -->
+  <!-- 前端到应用层 -->
+  <line x1="160" y1="180" x2="160" y2="280" class="connection"/>
+  <line x1="400" y1="180" x2="400" y2="280" class="connection"/>
+  <line x1="640" y1="180" x2="640" y2="280" class="connection"/>
+  
+  <!-- 应用层内部连接 -->
+  <line x1="160" y1="330" x2="160" y2="340" class="connection"/>
+  <line x1="160" y1="340" x2="175" y2="340" class="connection"/>
+  
+  <line x1="535" y1="340" x2="610" y2="340" class="connection"/>
+  <line x1="610" y1="340" x2="610" y2="330" class="connection"/>
+  
+  <!-- 应用层到AI服务层 -->
+  <line x1="235" y1="390" x2="235" y2="480" class="connection"/>
+  <line x1="535" y1="390" x2="535" y2="480" class="connection"/>
 </svg>

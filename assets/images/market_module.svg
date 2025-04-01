@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .icon-bg { fill: #ff6b6b; rx: 10; ry: 10; }
+    .icon-text { font: bold 16px Arial; fill: #fff; text-anchor: middle; }
+    .icon-desc { font: 14px Arial; fill: #333; text-anchor: middle; }
+  </style>
+  
+  <!-- 市场模块图标 -->
+  <rect x="10" y="10" width="180" height="140" class="icon-bg"/>
+  <text x="100" y="60" class="icon-text">市场模块</text>
+  <text x="100" y="100" class="icon-desc">空投任务</text>
+  <text x="100" y="120" class="icon-desc">任务赚取代币</text>
+  <text x="100" y="140" class="icon-desc">Telegram分享</text>
+</svg>

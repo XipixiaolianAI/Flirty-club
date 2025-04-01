@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .subtitle { font: bold 18px Arial; fill: #555; }
+    .incentive { font: bold 16px Arial; fill: #fff; }
+    .incentive-bg { fill: #fd7e14; rx: 10; ry: 10; }
+    .incentive-text { font: 14px Arial; fill: #333; }
+    .arrow { stroke: #adb5bd; stroke-width: 2; marker-end: url(#arrowhead); }
+    .reward { font: bold 16px Arial; fill: #fff; }
+    .reward-bg { fill: #20c997; rx: 10; ry: 10; }
+    .icon-bg { fill: #e9ecef; stroke: #ced4da; stroke-width: 1; rx: 5; ry: 5; }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#adb5bd"/>
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" class="title">Flirty.club 用户激励机制</text>
+  <text x="400" y="70" text-anchor="middle" class="subtitle">通过积分激励用户参与，提高用户活跃度和项目曝光</text>
+  
+  <!-- 中心图标 -->
+  <circle cx="400" cy="200" r="60" fill="#ff6b6b"/>
+  <text x="400" y="190" text-anchor="middle" font-size="18" font-weight="bold" fill="white">积分</text>
+  <text x="400" y="210" text-anchor="middle" font-size="18" font-weight="bold" fill="white">系统</text>
+  
+  <!-- 激励活动 -->
+  <rect x="100" y="120" width="160" height="50" class="incentive-bg"/>
+  <text x="180" y="150" text-anchor="middle" class="incentive">项目分享</text>
+  
+  <rect x="100" y="230" width="160" height="50" class="incentive-bg"/>
+  <text x="180" y="260" text-anchor="middle" class="incentive">Twitter转发</text>
+  
+  <rect x="100" y="340" width="160" height="50" class="incentive-bg"/>
+  <text x="180" y="370" text-anchor="middle" class="incentive">社群拉人</text>
+  
+  <rect x="540" y="120" width="160" height="50" class="incentive-bg"/>
+  <text x="620" y="150" text-anchor="middle" class="incentive">TG群发广告</text>
+  
+  <!-- 奖励 -->
+  <rect x="540" y="230" width="160" height="50" class="reward-bg"/>
+  <text x="620" y="260" text-anchor="middle" class="reward">获取积分</text>
+  
+  <rect x="540" y="340" width="160" height="50" class="reward-bg"/>
+  <text x="620" y="370" text-anchor="middle" class="reward">兑换代币</text>
+  
+  <!-- 连接箭头 -->
+  <line x1="260" y1="145" x2="340" y2="180" class="arrow"/>
+  <line x1="260" y1="255" x2="340" y2="210" class="arrow"/>
+  <line x1="260" y1="365" x2="340" y2="240" class="arrow"/>
+  <line x1="460" y1="180" x2="540" y2="145" class="arrow"/>
+  <line x1="460" y1="210" x2="540" y2="255" class="arrow"/>
+  <line x1="460" y1="240" x2="540" y2="365" class="arrow"/>
+  
+  <!-- 说明文本 -->
+  <rect x="100" y="420" width="600" height="60" class="icon-bg"/>
+  <text x="400" y="445" text-anchor="middle" font-size="16" fill="#333">积分可用于平台内消费或兑换代币</text>
+  <text x="400" y="465" text-anchor="middle" font-size="16" fill="#333">形成良性循环，提高用户参与度和项目曝光度</text>
+</svg>

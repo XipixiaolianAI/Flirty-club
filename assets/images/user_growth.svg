@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .subtitle { font: bold 18px Arial; fill: #555; }
+    .chart-bg { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 1; }
+    .bar { fill: #4dabf7; rx: 5; ry: 5; }
+    .bar-highlight { fill: #ff6b6b; rx: 5; ry: 5; }
+    .axis { stroke: #adb5bd; stroke-width: 1; }
+    .axis-text { font: 12px Arial; fill: #666; }
+    .label { font: bold 14px Arial; fill: #333; }
+    .value { font: 14px Arial; fill: #495057; }
+    .strategy { font: bold 16px Arial; fill: #fff; }
+    .strategy-bg { fill: #20c997; rx: 10; ry: 10; }
+    .strategy-text { font: 14px Arial; fill: #333; }
+  </style>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" class="title">Flirty.club 用户增长策略</text>
+  
+  <!-- 用户增长目标图表 -->
+  <rect x="50" y="70" width="700" height="200" class="chart-bg" rx="10" ry="10"/>
+  <text x="400" y="100" text-anchor="middle" class="subtitle">用户增长目标</text>
+  
+  <!-- 坐标轴 -->
+  <line x1="100" y1="220" x2="700" y2="220" class="axis"/>
+  <line x1="100" y1="220" x2="100" y2="120" class="axis"/>
+  
+  <!-- 坐标轴标签 -->
+  <text x="100" y="240" text-anchor="middle" class="axis-text">内测</text>
+  <text x="300" y="240" text-anchor="middle" class="axis-text">1个月</text>
+  <text x="500" y="240" text-anchor="middle" class="axis-text">3个月</text>
+  <text x="700" y="240" text-anchor="middle" class="axis-text">上线3个月后</text>
+  
+  <!-- 柱状图 -->
+  <rect x="80" y="190" width="40" height="30" class="bar"/>
+  <rect x="280" y="150" width="40" height="70" class="bar"/>
+  <rect x="480" y="120" width="40" height="100" class="bar-highlight"/>
+  <rect x="680" y="120" width="40" height="100" class="bar"/>
+  
+  <!-- 数值标签 -->
+  <text x="100" y="180" text-anchor="middle" class="value">1,000</text>
+  <text x="300" y="140" text-anchor="middle" class="value">10,000</text>
+  <text x="500" y="110" text-anchor="middle" class="value">100,000</text>
+  <text x="700" y="110" text-anchor="middle" class="value">200,000</text>
+  
+  <!-- 增长策略 -->
+  <text x="400" y="290" text-anchor="middle" class="subtitle">三大核心增长策略</text>
+  
+  <!-- 策略1 -->
+  <rect x="100" y="320" width="160" height="60" class="strategy-bg"/>
+  <text x="180" y="350" text-anchor="middle" class="strategy">用户激励机制</text>
+  <text x="180" y="400" text-anchor="middle" class="strategy-text">通过积分激励用户分享</text>
+  <text x="180" y="420" text-anchor="middle" class="strategy-text">预计贡献30%新用户</text>
+  
+  <!-- 策略2 -->
+  <rect x="320" y="320" width="160" height="60" class="strategy-bg"/>
+  <text x="400" y="350" text-anchor="middle" class="strategy">Telegram流量购买</text>
+  <text x="400" y="400" text-anchor="middle" class="strategy-text">定向流量采购</text>
+  <text x="400" y="420" text-anchor="middle" class="strategy-text">预计贡献30%新用户</text>
+  
+  <!-- 策略3 -->
+  <rect x="540" y="320" width="160" height="60" class="strategy-bg"/>
+  <text x="620" y="350" text-anchor="middle" class="strategy">项目互相倒流</text>
+  <text x="620" y="400" text-anchor="middle" class="strategy-text">与成熟Telegram项目合作</text>
+  <text x="620" y="420" text-anchor="middle" class="strategy-text">预计贡献40%新用户</text>
+</svg>

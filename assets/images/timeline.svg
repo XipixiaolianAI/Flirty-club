@@ -1,6 +1,63 @@
-/* 这是一个SVG占位图，用于时间线图 */
-<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="#f0f0f0"/>
-  <text x="400" y="150" font-family="Arial" font-size="24" text-anchor="middle">开发时间线</text>
-  <text x="400" y="190" font-family="Arial" font-size="16" text-anchor="middle">Flirty.club项目的开发时间线与里程碑</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .milestone { font: bold 16px Arial; fill: #fff; }
+    .milestone-bg { fill: #ff6b6b; rx: 10; ry: 10; }
+    .milestone-text { font: 14px Arial; fill: #333; }
+    .timeline { stroke: #ddd; stroke-width: 4; stroke-linecap: round; }
+    .timeline-dot { fill: #ff6b6b; stroke: #fff; stroke-width: 2; }
+    .month { font: bold 18px Arial; fill: #555; }
+  </style>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" class="title">Flirty.club 项目开发时间线</text>
+  
+  <!-- 时间线 -->
+  <line x1="100" y1="150" x2="700" y2="150" class="timeline"/>
+  
+  <!-- 月份标记 -->
+  <text x="100" y="180" text-anchor="middle" class="month">4月初</text>
+  <text x="250" y="180" text-anchor="middle" class="month">4月底</text>
+  <text x="400" y="180" text-anchor="middle" class="month">5月中旬</text>
+  <text x="550" y="180" text-anchor="middle" class="month">6月中旬</text>
+  <text x="700" y="180" text-anchor="middle" class="month">7月中旬</text>
+  
+  <!-- 时间点 -->
+  <circle cx="100" cy="150" r="10" class="timeline-dot"/>
+  <circle cx="250" cy="150" r="10" class="timeline-dot"/>
+  <circle cx="400" cy="150" r="10" class="timeline-dot"/>
+  <circle cx="550" cy="150" r="10" class="timeline-dot"/>
+  <circle cx="700" cy="150" r="10" class="timeline-dot"/>
+  
+  <!-- 里程碑1 -->
+  <rect x="50" y="70" width="100" height="60" class="milestone-bg"/>
+  <text x="100" y="95" text-anchor="middle" class="milestone">项目启动</text>
+  <text x="100" y="115" text-anchor="middle" class="milestone-text">开发开始</text>
+  
+  <!-- 里程碑2 -->
+  <rect x="200" y="70" width="100" height="60" class="milestone-bg"/>
+  <text x="250" y="95" text-anchor="middle" class="milestone">核心功能</text>
+  <text x="250" y="115" text-anchor="middle" class="milestone-text">开发完成</text>
+  
+  <!-- 里程碑3 -->
+  <rect x="350" y="70" width="100" height="60" class="milestone-bg"/>
+  <text x="400" y="95" text-anchor="middle" class="milestone">版本1.0</text>
+  <text x="400" y="115" text-anchor="middle" class="milestone-text">MVP上线</text>
+  
+  <!-- 里程碑4 -->
+  <rect x="500" y="70" width="100" height="60" class="milestone-bg"/>
+  <text x="550" y="95" text-anchor="middle" class="milestone">版本1.1</text>
+  <text x="550" y="115" text-anchor="middle" class="milestone-text">视频聊天功能</text>
+  
+  <!-- 里程碑5 -->
+  <rect x="650" y="70" width="100" height="60" class="milestone-bg"/>
+  <text x="700" y="95" text-anchor="middle" class="milestone">版本1.2</text>
+  <text x="700" y="115" text-anchor="middle" class="milestone-text">Web3功能</text>
+  
+  <!-- 用户目标 -->
+  <rect x="100" y="220" width="600" height="120" fill="#f8f9fa" rx="10" ry="10" stroke="#ddd"/>
+  <text x="400" y="250" text-anchor="middle" font-weight="bold" font-size="18" fill="#333">用户增长目标</text>
+  <text x="400" y="280" text-anchor="middle" font-size="16" fill="#555">上线1个月内达到1万用户</text>
+  <text x="400" y="310" text-anchor="middle" font-size="16" fill="#555">上线3个月内达到10万月活用户</text>
 </svg>
