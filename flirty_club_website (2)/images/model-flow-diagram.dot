@@ -1,0 +1,51 @@
+digraph G {
+    rankdir=LR;
+    node [shape=box, style=filled, fillcolor=lightblue, fontname="Arial", fontsize=12];
+    edge [fontname="Arial", fontsize=10];
+    
+    // 输入节点
+    Input [label="用户输入\n(提示词/消息)", shape=ellipse, fillcolor="#ff6b6b", fontcolor=white];
+    
+    // 模型节点
+    subgraph cluster_models {
+        label="AI模型调用流程";
+        style=filled;
+        color=lightgrey;
+        fontname="Arial";
+        fontsize=14;
+        
+        // 图像生成模型
+        SD [label="Stable Diffusion\n基础模型", fillcolor="#4ecdc4", fontcolor=white];
+        LoRA [label="LoRA模型\n(layra & Female Characters)", fillcolor="#4ecdc4", fontcolor=white];
+        
+        // 对话模型
+        LLM [label="大型语言模型\n(Llama-3-8b-chat)", fillcolor="#f7b731", fontcolor=white];
+        
+        // 语音模型
+        TTS [label="文本到语音模型\n(XTTS-v2)", fillcolor="#a55eea", fontcolor=white];
+        
+        // 视频模型
+        VideoGen [label="图像转视频模型\n(SadTalker)", fillcolor="#26de81", fontcolor=white];
+    }
+    
+    // 输出节点
+    ImageOutput [label="生成的图像", shape=ellipse, fillcolor="#ff6b6b", fontcolor=white];
+    TextOutput [label="生成的文本", shape=ellipse, fillcolor="#ff6b6b", fontcolor=white];
+    VoiceOutput [label="生成的语音", shape=ellipse, fillcolor="#ff6b6b", fontcolor=white];
+    VideoOutput [label="生成的视频", shape=ellipse, fillcolor="#ff6b6b", fontcolor=white];
+    
+    // 连接
+    Input -> SD [label="图像提示词"];
+    SD -> LoRA [label="应用LoRA权重"];
+    LoRA -> ImageOutput [label="生成图像"];
+    
+    Input -> LLM [label="用户消息"];
+    LLM -> TextOutput [label="生成回复"];
+    
+    TextOutput -> TTS [label="文本内容"];
+    TTS -> VoiceOutput [label="生成语音"];
+    
+    ImageOutput -> VideoGen [label="图像输入"];
+    VoiceOutput -> VideoGen [label="语音输入"];
+    VideoGen -> VideoOutput [label="生成视频"];
+}

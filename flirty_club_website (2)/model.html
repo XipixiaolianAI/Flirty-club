@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flirty.club - 模型计划</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Flirty.club Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="development.html">开发计划</a></li>
+                    <li><a href="marketing.html">市场计划</a></li>
+                    <li><a href="model.html" class="active">模型计划</a></li>
+                    <li><a href="ai-girlfriend.html">AI女友技术方案</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>模型计划</h1>
+            <p>Flirty.club项目的AI模型选择、训练和优化方案</p>
+        </div>
+    </section>
+
+    <section class="model-overview">
+        <div class="container">
+            <h2>模型概述</h2>
+            <p>Flirty.club项目的核心是AI模型，我们需要多种AI模型协同工作，为用户提供个性化的AI女友体验。我们的模型计划包括模型选择、训练、优化和部署等方面，确保AI女友功能的高质量实现。</p>
+            
+            <div class="model-flow-diagram">
+                <img src="images/model-flow-diagram.png" alt="模型调用流程图">
+                <p class="diagram-caption">图1: AI模型调用流程图</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-selection">
+        <div class="container">
+            <h2>模型选择</h2>
+            <div class="model-cards">
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>图像生成模型</h3>
+                    <p><strong>基础模型:</strong> CompVis/stable-diffusion-v1-5</p>
+                    <p><strong>LoRA模型:</strong> layra & Female Characters XL Illustrious LORA</p>
+                    <p><strong>优势:</strong> 形象一致性高，支持丰富的触发词定制</p>
+                    <p><strong>测试链接:</strong> <a href="https://civitai.com/models/85614/layra-female-characters-guy-youma-kakusei-xl-illustrious-lora" target="_blank">查看模型</a></p>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>对话生成模型</h3>
+                    <p><strong>推荐模型:</strong> meta-llama/Llama-3-8b-chat</p>
+                    <p><strong>备选模型:</strong> Qwen2-7B-Instruct</p>
+                    <p><strong>优势:</strong> 支持多轮对话，性能良好且资源需求适中</p>
+                    <p><strong>测试链接:</strong> <a href="https://huggingface.co/meta-llama/Llama-3-8b-chat" target="_blank">查看模型</a></p>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3>语音生成模型</h3>
+                    <p><strong>推荐模型:</strong> XTTS-v2</p>
+                    <p><strong>备选模型:</strong> Bark</p>
+                    <p><strong>优势:</strong> 支持多种语言和声音风格，能够表达情感和语调变化</p>
+                    <p><strong>测试链接:</strong> <a href="https://huggingface.co/coqui/XTTS-v2" target="_blank">查看模型</a></p>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>图像转视频模型</h3>
+                    <p><strong>推荐模型:</strong> SadTalker</p>
+                    <p><strong>备选模型:</strong> MakeItTalk</p>
+                    <p><strong>优势:</strong> 能够从静态图像生成逼真的面部动画，支持与音频同步</p>
+                    <p><strong>测试链接:</strong> <a href="https://github.com/OpenTalker/SadTalker" target="_blank">查看模型</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-development">
+        <div class="container">
+            <h2>模型开发流程</h2>
+            <div class="development-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>搜集模型</h3>
+                        <p>寻找和整理适合项目需求的AI模型，包括图像生成、对话生成、语音生成和图像转视频模型。我们主要从Civitai和Hugging Face等平台搜集模型，确保模型的质量和可用性。</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>筛选模型</h3>
+                        <p>评估和选择最适合项目的模型，考虑因素包括模型性能、资源需求、许可证限制和社区支持等。我们会对每个模型进行基准测试，确保其满足我们的需求。</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>测试模型</h3>
+                        <p>对选定的模型进行性能和效果测试，包括生成质量、响应时间、资源消耗和稳定性等方面。我们会使用真实场景数据进行测试，确保模型在实际应用中的表现。</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>搭建工作流</h3>
+                        <p>构建完整的AI处理流程，包括模型加载、数据预处理、推理执行和结果后处理等环节。我们会设计高效的工作流，确保模型能够无缝协作。</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>与APP开发联调</h3>
+                        <p>确保AI模型与平台功能无缝集成，包括API设计、数据格式定义、错误处理和性能优化等方面。我们会与APP开发团队密切合作，确保整体系统的稳定性和用户体验。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-optimization">
+        <div class="container">
+            <h2>模型优化策略</h2>
+            <div class="optimization-grid">
+                <div class="optimization-card">
+                    <h3>形象一致性优化</h3>
+                    <p><strong>挑战：</strong>确保AI女友在不同场景下的形象保持一致。</p>
+                    <p><strong>策略：</strong></p>
+                    <ul>
+                        <li>使用固定的随机种子值</li>
+                        <li>保存和复用模型参数</li>
+                        <li>开发形象验证机制</li>
+                        <li>使用参考图像引导生成</li>
+                    </ul>
+                </div>
+                <div class="optimization-card">
+                    <h3>性能优化</h3>
+                    <p><strong>挑战：</strong>减少模型推理时间，提高响应速度。</p>
+                    <p><strong>策略：</strong></p>
+                    <ul>
+                        <li>模型量化和剪枝</li>
+                        <li>使用GPU加速推理</li>
+                        <li>批处理请求</li>
+                        <li>结果缓存机制</li>
+                    </ul>
+                </div>
+                <div class="optimization-card">
+                    <h3>资源优化</h3>
+                    <p><strong>挑战：</strong>降低模型的资源消耗，提高系统效率。</p>
+                    <p><strong>策略：</strong></p>
+                    <ul>
+                        <li>模型压缩技术</li>
+                        <li>动态资源分配</li>
+                        <li>按需加载模型</li>
+                        <li>优化内存使用</li>
+                    </ul>
+                </div>
+                <div class="optimization-card">
+                    <h3>质量优化</h3>
+                    <p><strong>挑战：</strong>提高生成内容的质量和多样性。</p>
+                    <p><strong>策略：</strong></p>
+                    <ul>
+                        <li>提示词工程</li>
+                        <li>参数调优</li>
+                        <li>后处理技术</li>
+                        <li>人工反馈循环</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ai-girlfriend-integration">
+        <div class="container">
+            <h2>AI女友技术方案集成</h2>
+            <div class="integration-content">
+                <div class="integration-text">
+                    <p>我们已经完成了详细的AI女友技术方案设计，该方案基于对Civitai和Huggingface上LoRA模型的研究，以及对Flirty.club产品需求的深入分析。</p>
+                    <p>技术方案的核心内容包括：</p>
+                    <ul>
+                        <li>模型选择与评估</li>
+                        <li>技术架构设计</li>
+                        <li>API规范定义</li>
+                        <li>实施计划制定</li>
+                        <li>风险管理策略</li>
+                    </ul>
+                    <p>这个方案将作为模型开发和集成的技术指南，确保AI女友功能的顺利实现。</p>
+                    <a href="ai-girlfriend.html" class="btn btn-primary">查看完整技术方案</a>
+                </div>
+                <div class="integration-image">
+                    <img src="images/data-flow-diagram.png" alt="AI女友数据流程图">
+                    <p class="diagram-caption">AI女友功能数据流程图</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>探索AI女友技术</h2>
+            <p>了解我们如何将LoRA模型应用于Flirty.club，打造个性化AI女友体验</p>
+            <a href="ai-girlfriend.html" class="btn btn-primary">查看AI女友技术方案</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Flirty.club Logo">
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="development.html">开发计划</a></li>
+                        <li><a href="marketing.html">市场计划</a></li>
+                        <li><a href="model.html">模型计划</a></li>
+                        <li><a href="ai-girlfriend.html">AI女友技术方案</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-envelope"></i> contact@flirty.club</p>
+                    <p><i class="fas fa-globe"></i> www.flirty.club</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flirty.club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

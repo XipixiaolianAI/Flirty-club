@@ -1,0 +1,79 @@
+digraph G {
+    rankdir=LR;
+    node [shape=box, style=filled, fillcolor=lightblue, fontname="Arial", fontsize=12];
+    edge [fontname="Arial", fontsize=10];
+    
+    subgraph cluster_webapp {
+        label="Flirty.club WebAPP";
+        style=filled;
+        color=lightgrey;
+        fontname="Arial";
+        fontsize=14;
+        
+        UI [label="用户界面", fillcolor="#ff6b6b", fontcolor=white];
+        Interaction [label="交互逻辑", fillcolor="#ff6b6b", fontcolor=white];
+    }
+    
+    subgraph cluster_api_gateway {
+        label="AI服务中间层";
+        style=filled;
+        color=lightgrey;
+        fontname="Arial";
+        fontsize=14;
+        
+        API [label="API Gateway", fillcolor="#4ecdc4", fontcolor=white];
+        Auth [label="认证和授权", fillcolor="#4ecdc4", fontcolor=white];
+        Cache [label="缓存和队列", fillcolor="#4ecdc4", fontcolor=white];
+        WS [label="WebSocket服务", fillcolor="#4ecdc4", fontcolor=white];
+    }
+    
+    subgraph cluster_model_servers {
+        label="AI模型服务层";
+        style=filled;
+        color=lightgrey;
+        fontname="Arial";
+        fontsize=14;
+        
+        Image [label="形象生成服务", fillcolor="#f7b731", fontcolor=white];
+        Chat [label="对话生成服务", fillcolor="#f7b731", fontcolor=white];
+        Voice [label="语音生成服务", fillcolor="#f7b731", fontcolor=white];
+        Video [label="图像转视频服务", fillcolor="#f7b731", fontcolor=white];
+    }
+    
+    subgraph cluster_storage {
+        label="模型资源存储";
+        style=filled;
+        color=lightgrey;
+        fontname="Arial";
+        fontsize=14;
+        
+        Models [label="模型文件", fillcolor="#a55eea", fontcolor=white];
+        Media [label="媒体文件", fillcolor="#a55eea", fontcolor=white];
+        Config [label="配置和历史", fillcolor="#a55eea", fontcolor=white];
+    }
+    
+    // 连接
+    UI -> Interaction;
+    Interaction -> API [label="API请求"];
+    
+    API -> Auth;
+    API -> Cache;
+    API -> WS;
+    
+    API -> Image [label="路由请求"];
+    API -> Chat [label="路由请求"];
+    API -> Voice [label="路由请求"];
+    API -> Video [label="路由请求"];
+    
+    Image -> Models [label="加载模型"];
+    Chat -> Models [label="加载模型"];
+    Voice -> Models [label="加载模型"];
+    Video -> Models [label="加载模型"];
+    
+    Image -> Media [label="存储图像"];
+    Chat -> Config [label="存储对话"];
+    Voice -> Media [label="存储语音"];
+    Video -> Media [label="存储视频"];
+    
+    WS -> Interaction [label="异步通知"];
+}

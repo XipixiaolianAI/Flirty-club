@@ -1,0 +1,54 @@
+digraph G {
+    rankdir=TB;
+    node [shape=box, style=filled, fillcolor=lightblue, fontname="Arial", fontsize=12];
+    edge [fontname="Arial", fontsize=10];
+    
+    // 时间线节点
+    Week0 [label="第0周\n项目启动", fillcolor="#ff6b6b", fontcolor=white];
+    Week2 [label="第2周\n环境准备完成", fillcolor="#4ecdc4", fontcolor=white];
+    Week8 [label="第8周\n核心服务开发完成", fillcolor="#f7b731", fontcolor=white];
+    Week11 [label="第11周\n集成测试完成", fillcolor="#a55eea", fontcolor=white];
+    Week12 [label="第12周\n预发布部署完成", fillcolor="#26de81", fontcolor=white];
+    Week13 [label="第13周\n生产部署完成", fillcolor="#778ca3", fontcolor=white];
+    Week14 [label="第14周\n项目验收", fillcolor="#ff6b6b", fontcolor=white];
+    
+    // 阶段节点
+    Preparation [label="准备阶段\n(2周)", shape=ellipse, fillcolor="#4ecdc4", fontcolor=white];
+    Development [label="核心服务开发阶段\n(6周)", shape=ellipse, fillcolor="#f7b731", fontcolor=white];
+    Integration [label="集成和测试阶段\n(3周)", shape=ellipse, fillcolor="#a55eea", fontcolor=white];
+    Deployment [label="部署和优化阶段\n(3周)", shape=ellipse, fillcolor="#26de81", fontcolor=white];
+    
+    // 连接时间线
+    Week0 -> Week2 -> Week8 -> Week11 -> Week12 -> Week13 -> Week14;
+    
+    // 连接阶段
+    Week0 -> Preparation [dir=none, style=dashed];
+    Week2 -> Preparation [dir=none, style=dashed];
+    
+    Week2 -> Development [dir=none, style=dashed];
+    Week8 -> Development [dir=none, style=dashed];
+    
+    Week8 -> Integration [dir=none, style=dashed];
+    Week11 -> Integration [dir=none, style=dashed];
+    
+    Week11 -> Deployment [dir=none, style=dashed];
+    Week14 -> Deployment [dir=none, style=dashed];
+    
+    // 关键交付物
+    Week0Deliverables [label="项目计划\n团队组建", shape=note, fillcolor="#f1f2f6"];
+    Week2Deliverables [label="开发环境\n模型库", shape=note, fillcolor="#f1f2f6"];
+    Week8Deliverables [label="AI服务代码\nAPI文档", shape=note, fillcolor="#f1f2f6"];
+    Week11Deliverables [label="集成测试报告\nWebAPP集成指南", shape=note, fillcolor="#f1f2f6"];
+    Week12Deliverables [label="预发布环境\n测试报告", shape=note, fillcolor="#f1f2f6"];
+    Week13Deliverables [label="生产环境\n运维手册", shape=note, fillcolor="#f1f2f6"];
+    Week14Deliverables [label="项目总结报告\n技术文档", shape=note, fillcolor="#f1f2f6"];
+    
+    // 连接交付物
+    Week0 -> Week0Deliverables [dir=none, style=dotted];
+    Week2 -> Week2Deliverables [dir=none, style=dotted];
+    Week8 -> Week8Deliverables [dir=none, style=dotted];
+    Week11 -> Week11Deliverables [dir=none, style=dotted];
+    Week12 -> Week12Deliverables [dir=none, style=dotted];
+    Week13 -> Week13Deliverables [dir=none, style=dotted];
+    Week14 -> Week14Deliverables [dir=none, style=dotted];
+}

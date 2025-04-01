@@ -1,0 +1,54 @@
+digraph G {
+    rankdir=TB;
+    node [shape=box, style=filled, fillcolor=lightblue, fontname="Arial", fontsize=12];
+    edge [fontname="Arial", fontsize=10];
+    
+    // 用户节点
+    User [label="用户", shape=circle, fillcolor="#ff6b6b", fontcolor=white];
+    
+    // WebAPP节点
+    WebApp [label="Flirty.club WebAPP", fillcolor="#4ecdc4", fontcolor=white];
+    
+    // API Gateway节点
+    APIGateway [label="API Gateway", fillcolor="#f7b731", fontcolor=white];
+    
+    // 服务节点
+    ImageService [label="形象生成服务", fillcolor="#a55eea", fontcolor=white];
+    ChatService [label="对话生成服务", fillcolor="#a55eea", fontcolor=white];
+    VoiceService [label="语音生成服务", fillcolor="#a55eea", fontcolor=white];
+    VideoService [label="图像转视频服务", fillcolor="#a55eea", fontcolor=white];
+    
+    // 存储节点
+    Storage [label="模型资源存储", fillcolor="#26de81", fontcolor=white];
+    
+    // AI女友创建流程
+    User -> WebApp [label="1. 提供形象描述"];
+    WebApp -> APIGateway [label="2. 发送请求"];
+    APIGateway -> ImageService [label="3. 路由请求"];
+    ImageService -> Storage [label="4. 生成图像\n5. 保存图像"];
+    Storage -> APIGateway [label="6. 返回图像URL"];
+    APIGateway -> WebApp [label="7. 返回图像URL"];
+    WebApp -> User [label="8. 展示AI女友形象"];
+    
+    // 添加分隔线
+    edge [style=invis];
+    User -> Separator [weight=100];
+    Separator [shape=none, label="", height=0];
+    
+    // AI女友聊天流程
+    edge [style=solid];
+    User -> WebApp [label="1. 发送消息", constraint=false];
+    WebApp -> APIGateway [label="2. 发送请求", constraint=false];
+    APIGateway -> ChatService [label="3. 路由请求", constraint=false];
+    ChatService -> APIGateway [label="4. 生成文字回复", constraint=false];
+    APIGateway -> VoiceService [label="5. 发送文字", constraint=false];
+    VoiceService -> Storage [label="6. 生成语音\n7. 保存语音", constraint=false];
+    APIGateway -> ImageService [label="8. 请求生成图像", constraint=false];
+    ImageService -> Storage [label="9. 生成图像\n10. 保存图像", constraint=false];
+    Storage -> APIGateway [label="11. 返回资源URL", constraint=false];
+    APIGateway -> VideoService [label="12. 发送图像和语音", constraint=false];
+    VideoService -> Storage [label="13. 生成视频\n14. 保存视频", constraint=false];
+    Storage -> APIGateway [label="15. 返回视频URL", constraint=false];
+    APIGateway -> WebApp [label="16. 返回所有资源URL", constraint=false];
+    WebApp -> User [label="17. 展示AI女友回复", constraint=false];
+}

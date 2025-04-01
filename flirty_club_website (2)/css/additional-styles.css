@@ -1,0 +1,67 @@
+.diagram-caption {
+    text-align: center;
+    font-style: italic;
+    color: var(--gray-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.architecture-diagram img,
+.data-flow-diagram img,
+.model-flow-diagram img,
+.timeline-diagram img,
+.risk-diagram img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+.timeline-diagram,
+.risk-diagram {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* 添加一些额外的响应式调整 */
+@media (max-width: 768px) {
+    .model-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .demo-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .tab-header {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        flex: 1 0 auto;
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .model-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .demo-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .integration-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+}
