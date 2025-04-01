@@ -1,0 +1,6 @@
+/* 这是一个SVG占位图，用于用户流程图 */
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="400" y="150" font-family="Arial" font-size="24" text-anchor="middle">用户流程图</text>
+  <text x="400" y="190" font-family="Arial" font-size="16" text-anchor="middle">Flirty.club用户交互流程</text>
+</svg>
